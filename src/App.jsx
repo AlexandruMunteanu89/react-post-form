@@ -1,8 +1,12 @@
+import { useState } from 'react';
 
+const NuovoForm = () => {
+  const [author, setAuthor] = useState('');
+  const [title, setTitle] = useState('');
+  const [body, setBody] = useState('');
+  const [publicPost, setPublicPost] = useState(false);
 
-function App() {
   
-
   return (
     <>
       
@@ -10,4 +14,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
