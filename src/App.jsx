@@ -51,6 +51,7 @@ const NuovoForm = () => {
             onChange={(e) => setPublicPost(e.target.value)}
           />
         </div>
+        <button>Nuovo Post</button>
       </form>
   )
 }
