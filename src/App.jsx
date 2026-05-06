@@ -17,9 +17,41 @@ const NuovoForm = () => {
     console.log(newPost);
   };
   return (
-    <>
-      
-    </>
+    <form onSubmit={handleSubmit}>
+        <div>
+          <label>Author:</label>
+          <input
+            type="text"
+            value={author}
+            onChange={(e) => setAuthor(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label>Title:</label>
+          <input
+            type="text"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label>Body:</label>
+          <input
+            value={body}
+            onChange={(e) => setBody(e.target.value)}
+          />
+        </div>
+        <div>
+          <label>Public:</label>
+          <input
+            type="checkbox"
+            checked={publicPost}
+            onChange={(e) => setPublicPost(e.target.value)}
+          />
+        </div>
+      </form>
   )
 }
 
